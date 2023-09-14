@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenue à l'exercice 3!</h1>
+</div>
+
+<div class="d-flex flex-column">
+    <div class="d-flex justify-content-center">
+        <div class="d-flex flex-column">
+            <a class="btn btn-light shadow-sm m-1" asp-area="" asp-controller="Test" asp-action="TesterTéléchargement">Lien #1 - Télécharger document</a>
+            <a class="btn btn-light shadow-sm m-1" asp-area="" asp-controller="Test" asp-action="TesterRedirectionExterne">Lien #2 - Cégep St-Jean</a>
+            <a class="btn btn-light shadow-sm m-1" asp-area="" asp-controller="Test" asp-action="TesterContenu">Lien #3 - Contenu texte</a>
+        </div>
+        <div class="d-flex flex-column">
+            <a class="btn btn-light shadow-sm m-1" asp-area="" asp-controller="Test" asp-action="TesterRedirectionVersAction">Lien #4 - Redirection vers action</a>
+            <a class="btn btn-light shadow-sm m-1" asp-route="Bonjour" asp-route-prénom="Claudine" asp-route-nom="Langlois">Lien #5 - Route</a>
+            <a class="btn btn-light shadow-sm m-1" asp-area="" asp-controller="Test" asp-action="TesterSession">Lien #6 - Session</a>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <a class="btn btn-light shadow-sm m-1" asp-area="" asp-controller="Etudiant" asp-action="Create">Lien #7 - Etudiant</a>
+    </div>
+</div>
